@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 5px 20px;
+  min-height: 205px;
+
+  .logo {
+    width: 310px;
+    height: auto;
+    transform: rotate(-10deg);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}

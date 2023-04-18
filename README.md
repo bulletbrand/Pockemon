@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+## Your approach and design choices
+ -Since the project is just a small pokemon finder, and even if it is further expanded, it will not be a large
+  enterprise application, and is only a test case, I have broken down the components by a simple approach, 
+  using neither atomic nor modular, much less feature slice architecture.
+ 
+  -As the UI design I chose colors pleasing to the eye, despite the fact that the color scheme is not original 
+   to the Pokemon series, it gives a sense of being in the game.
+   
+  -As for the approach to separate the business logic and the UI, then as the application does
+   not need any kind of state manager, it was based on a simple approach of calling the API
+  endpoints in the components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How long it took you to complete the test (you are not evaluated on your speed)
+ - 8 hours
 
-## Available Scripts
+## If you had to do a second iteration, what would you add or improve?
+1)Remove the search with includes and get all the pokemon when I mount a hook because pokemon api 
+provides a search by name.
 
-In the project directory, you can run:
+2)Add custom optimized fonts.
 
-### `npm start`
+3)Move the components to the storybook and create my own library with Typography, Box, Grid and other components that
+can be shared with help of monorepo between other projects.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4)Add adaptive design, and appropriate custom hooks for it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5)Add skeletons for loading pokemon
 
-### `npm test`
+6)Make an app like PWA so people can search for their favorite pokémon even without internet
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7)improve infrastructure for tests ( move msw to utils files because tests will be expanded )
 
-### `npm run build`
+8)Create mixins for fonts and animations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9)Break down the components as atoms, moleculs, organism
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+10)Lazy loading of components if the application will be large enough
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+11)Migration to Vite, as it is a painless process that will improve performance compared to cra/webpack
 
-### `npm run eject`
+12)Add aliases for imports
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+13)Pokémon api is big enough, we can get a lot more information if we wanted to, we could do that in the next iteration as well

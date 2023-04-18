@@ -1,0 +1,25 @@
+@import 'src/variables';
+
+.wrapper {
+  display: flex;
+  padding: 12px;
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .statName {
+      font-size: 20px;
+      font-weight: 600;
+      color: $green;
+      margin-right: 10px;
+    }
+
+    .statValue {
+      font-size: 16px;
+      font-weight: 600;
+      color: $yellow;
+    }
+  }
+}

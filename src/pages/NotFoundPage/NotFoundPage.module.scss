@@ -1,0 +1,43 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255,253,203);
+
+  .notFoundContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 500px;
+    height: auto;
+  }
+
+  .notFoundTitle {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .notFoundText {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .goHomeBtn {
+    padding: 20px;
+    background: black;
+    color: #c78f22;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+  }
+}

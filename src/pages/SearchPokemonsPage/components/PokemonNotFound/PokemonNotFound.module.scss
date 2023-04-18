@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .imgWrapper {
+    img {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  .text {
+    color: darkgrey;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: monospace;
+  }
+
+  .textWrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

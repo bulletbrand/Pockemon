@@ -1,0 +1,15 @@
+@import 'src/variables';
+
+.wrapper {
+  min-height: calc(100vh - 380px);
+  min-width: 100%;
+  background: #141613;
+  flex-direction: column;
+  margin: 10px 0;
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px $yellow;
+  height: 100%;
+}
